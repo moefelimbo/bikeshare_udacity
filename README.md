@@ -14,6 +14,10 @@ In order to the run the script you need to do the following:
 * Run the command `python3 bikeshare.py`
 * Interact with the application's prompt.
 
+### Functions Descriptions
+#### `display_data`
+Ask the user whether he/she wants to display 5 rows of raw data and keep asking until the user replies with something other than `['yes','y','yep','yea']`
+
 ### Files used
 Include the files used:
 
