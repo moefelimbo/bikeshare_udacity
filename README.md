@@ -7,6 +7,13 @@ Bike Travel
 ### Description
 Display information about travel time by bikes
 
+### Usage
+In order to the run the script you need to do the following:
+
+* Ensure that pandas and numpy are installed.
+* Run the command `python3 bikeshare.py`
+* Interact with the application's prompt.
+
 ### Files used
 Include the files used:
 
