@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+Include the date you created this project and README file. (12/12/2020)
 
 ### Project Title
-Replace the Project Title
+Bike Travel
 
 ### Description
-Describe what your project is about and what it does
+Display information about travel time by bikes
 
 ### Files used
-Include the files used
+Include the files used:
+
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+* idxmax function to get the top items (Link)[https://www.xspdf.com/resolution/51853336.html#:~:text=Pandas%20get%20the%20most%20frequent%20values%20of%20a%20column%2C%20How,you%20the%20most%20frequent%20value] 
+* Groupby function (Link)[https://realpython.com/pandas-groupby/#:~:text=The%20%E2%80%9CHello%2C%20World!%E2%80%9D%20of%20Pandas%20GroupBy,-Now%20that%20you&text=You%20call%20.,a%20single%20column%20name%20to%20]
