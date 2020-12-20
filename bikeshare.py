@@ -17,8 +17,8 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
-        city = input("\nSelect a city from the following:\nChicago\nNew York City\nWashington\n\n").lower()
-        if city not in ('chicago', 'new york city', 'washington'):
+        city = input("\nSelect a city from the following:\nChicago\nNew York City\nWashington\n\n").lower().title()
+        if city not in ('Chicago', 'New York City', 'Washington'):
             print("\nInvalid input! Try again. ")
             continue
             # goes back to the while loop and repeats
@@ -27,23 +27,23 @@ def get_filters():
             # breaks the loop and goes to the next one
 
     while True:
-        month = input("\nSelect all or one month from the period of Jan to June.\n\n").lower()
-        if month not in ("all","jan", "feb", "march", "april", "may", "june"):
+        month = input("\nSelect all or one month from the period of Jan to June.\n\n").lower().capitalize()
+        if month not in ("All","Jan", "Feb", "Mar", "Apr", "May", "Jun"):
             print("\nInvalid input! Try again. ")
             continue
         else:
             break
 
     while True:
-        day = input("\nSelect a day or all days.\n\n").lower()
-        if day not in ("all", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"):
+        day = input("\nSelect a day or all days.\n\n").lower().capitalize()
+        if day not in ("All", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"):
             print("\nInvalid input! ")
             continue
         else:
             break
 
     print('-'*40)
-    return city.title(), month.capitalize(), day.capitalize()
+    return city, month, day
 
 
 
@@ -65,7 +65,7 @@ def load_data(city, month, day):
     df["day"] = df["Start Time"].dt.dayofweek
     df["hour"] = df["Start Time"].dt.hour
     if month != "All":
-        months = ["Jan", "Feb", "March", "April", "May", "June"]
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
         month = months.index(month) + 1
 
         df = df[df["month"] == month]
