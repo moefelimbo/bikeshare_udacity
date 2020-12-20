@@ -170,7 +170,6 @@ def user_stats(df):
     print('-'*40)
     
 def display_data(df):
-    # ask the user whether he/she wants to display 5 rows of raw data
     index=0
     user_input=input('would you like to display 5 rows of raw data? ').lower()
     while user_input in ['yes','y','yep','yea'] and index+5 < df.shape[0]:
@@ -192,6 +191,5 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 main()
